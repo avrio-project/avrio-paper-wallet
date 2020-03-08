@@ -100,14 +100,7 @@ var genwallet = function(lang) {
   //qr=new QRCode(address_qr_widget, {correctLevel:QRCode.CorrectLevel.L});
   //qr.makeCode("DERO:"+keys.public_addr);
 
-  document.getElementById("identicon_widget").innerHTML = "";
-  var icon = document.createElement("canvas");
-  icon.width = 128;
-  icon.height = 128;
-  icon.setAttribute("data-jdenticon-value", keys.public_addr);
-  document.getElementById("identicon_widget").appendChild(icon);
-  jdenticon.update(icon);
-
+  document.getElementById("identicon_widget").innerHTML = '<img id="identicon" src="https://api.adorable.io/avatars/285/' + keys.public_addr + '" style="width: 128px; height: 128px; border-radius: 30%;" alt="identicon">';
 };
 
 /*
