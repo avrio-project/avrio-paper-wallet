@@ -1643,11 +1643,11 @@ return{_strlen:lb,_ge_mul8:Va,_keccak:db,_ge_scalarmult:Ta,_ge_fromfe_frombytes_
 
 var salt = '4721283fee2db41e1f2fc50ea9f6d783'; // IMPORTANT: never change it, otherwise it will be impossible to restore previously generated wallets!
 var config = {
-    coinUnitPlaces: 12,
-    coinSymbol: 'TRTL',
-    coinName: 'TurtleCoin',
-    coinUriPrefix: 'turtlecoin:',
-    addressPrefix: 3914525
+    coinUnitPlaces: 4,
+    coinSymbol: 'AIO',
+    coinName: 'Avrio',
+    coinUriPrefix: 'avrio:',
+    addressPrefix: 0x94d49
 };
 var cnUtil = (function(initConfig) {
     //var config = $.extend({}, initConfig);
